@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Minions - Your Travel Companion</title>
+    <link rel="stylesheet" href="src/styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Travel Minions</h1>
+            <p>Your trusted travel companion for unforgettable adventures.</p>
+            <button onclick="window.location.href='#contact'">Get In Touch</button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>At Travel Minions, we specialize in creating customized travel experiences to destinations all over the world. Whether you're looking for adventure, relaxation, or cultural immersion, we've got you covered!</p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="services-list">
+            <div class="service-item adventure">
+                <h3>Adventure Tours</h3>
+                <p>Explore breathtaking destinations with our expertly guided adventure tours.</p>
+            </div>
+            <div class="service-item beach">
+                <h3>Beach Holidays</h3>
+                <p>Relax and unwind at the most beautiful beaches around the globe.</p>
+            </div>
+            <div class="service-item city">
+                <h3>City Breaks</h3>
+                <p>Discover the culture, history, and excitement of major cities worldwide.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+        <p id="form-message"></p>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Travel Minions. All Rights Reserved.</p>
+    </footer>
+
+    <script src="src/script.js"></script>
+</body>
+</html>

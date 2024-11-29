@@ -1,0 +1,194 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Navigation Bar */
+header {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('../assets/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h1 {
+    font-size: 3em;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+.hero button {
+    background-color: #f4b400;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background-color: #ffcc00;
+}
+
+/* About Section */
+#about {
+    padding: 40px;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+#about h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 1.2em;
+}
+
+/* Services Section */
+#services {
+    padding: 40px;
+    text-align: center;
+    background-image: url('../assets/service-bg.gif');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+#services h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.services-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.service-item {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.service-item.adventure {
+    background-image: url('../assets/adventure-banner-2.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.service-item.beach {
+    background-image: url('../assets/beach-banner-1.jpg');
+    background-size: cover;
+    background-position: center;
+    color: black;
+}
+
+.service-item.city {
+    background-image: url('../assets/city-banner-1.jpg');
+    background-size: cover;
+    background-position: center;
+    color: black;
+}
+
+.service-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    font-size: 1.1em;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #f4f4f4;
+    padding: 40px;
+    text-align: center;
+}
+
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#contact form label {
+    display: block;
+    margin-top: 10px;
+    font-size: 1.1em;
+}
+
+#contact form input, #contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact form button {
+    background-color: #f4b400;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+#contact form button:hover {
+    background-color: #ffcc00;
+}
+
+#form-message {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #4CAF50;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
