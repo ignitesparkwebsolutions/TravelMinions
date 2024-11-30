@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Minions - Your Travel Companion</title>
     <link rel="stylesheet" href="src/styles.css">
 </head>
+
 <body>
     <!-- Navigation Bar -->
     <header>
@@ -20,18 +22,35 @@
     </header>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
+    <div class="carousel-container hero">
+        <div class="carousel-images">
+            <div>
+                <img src="assets/carousel-1.jpg" alt="Image 1">
+            </div>
+            <div>
+                <img src="assets/carousel-2.jpg" alt="Image 2">
+            </div>
+            <div>
+                <img src="assets/carousel-3.jpg" alt="Image 3">
+            </div>
+            <div>
+                <img src="assets/carousel-4.jpg" alt="Image 4">
+            </div>
+        </div>
         <div class="hero-content">
             <h1>Welcome to Travel Minions</h1>
             <p>Your trusted travel companion for unforgettable adventures.</p>
             <button onclick="window.location.href='#contact'">Get In Touch</button>
         </div>
-    </section>
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
 
     <!-- About Section -->
     <section id="about">
         <h2>About Us</h2>
-        <p>At Travel Minions, we specialize in creating customized travel experiences to destinations all over the world. Whether you're looking for adventure, relaxation, or cultural immersion, we've got you covered!</p>
+        <p>At Travel Minions, we specialize in creating customized travel experiences to destinations all over the
+            world. Whether you're looking for adventure, relaxation, or cultural immersion, we've got you covered!</p>
     </section>
 
     <!-- Services Section -->
@@ -78,4 +97,5 @@
 
     <script src="src/script.js"></script>
 </body>
+
 </html>
