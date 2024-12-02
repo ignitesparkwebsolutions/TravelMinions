@@ -1,0 +1,28 @@
+name: Build Angular Project
+
+on:
+  workflow_dispatch:
+    inputs:
+      branch:
+        description: The branch to build
+        required: true
+        type: string
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          ref: ${{ github.event.inputs.branch }}
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '22'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build production
+        run: npm run build --prod 
